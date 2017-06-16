@@ -4,3 +4,6 @@ public class HelloWorld {
         System.exit( 0 ); //success
     }
 }
+
+
+ТИ ГО СМЕНИВ ФАЈЛОТ! ДА ВИДАМ ДАЛИ ЌЕ ПРИМЕТИШ! :)
