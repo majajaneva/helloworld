@@ -1,9 +1,22 @@
 #!/usr/bin/env groovy
-#include <iostream>
-using namespace std;
+pipeline {
+    agent any
 
-int main() 
-{
-    cout << "Hello, World!";
-    return 0;
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
