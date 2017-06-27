@@ -1,20 +1,8 @@
-<?xml version="1.0"?>
-<project name="Hello" default="hello" basedir=".">
-	<property name="cppcheck.exe" value="C:\Program Files\Cppcheck"/>
-	
-	<target name="init">
-		<condition property="cc" value="msvc">
-			<os family="windows"/>
-		</condition>
-		<condition property="cc" value="gcc">
-			<os family="unix"/>
-		</condition>
-	</target>
-	 
-	<target name="hello" depends="init">
-		<cc name="${cc}" outfile="hello">
-			<fileset dir="." includes="hello.c"/>
-		</cc>
-	</target>
- 
+<project name="hello" xmlns:cpptasks="antlib:net.sf.antcontrib.cpptasks">
+    <target name="hello">
+        <!--<mkdir dir="/home/varun/Desktop/lucene/3018-test/check"/> -->
+        <cpptasks:cc outtype="executable" subsystem="console" outfile="hello" objdir="C:\Program Files (x86)\Jenkins\workspace\Hello">
+           <fileset file="C:\Program Files (x86)\Jenkins\workspace\Hello\hello.c" />
+        </cpptasks:cc>
+    </target>
 </project>
