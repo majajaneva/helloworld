@@ -1,8 +1,0 @@
-<project name="hello" xmlns:cpptasks="antlib:net.sf.antcontrib.cpptasks">
-    <target name="hello">
-        <!--<mkdir dir="/home/varun/Desktop/lucene/3018-test/check"/> -->
-        <cpptasks:cc outtype="executable" subsystem="console" outfile="hello" objdir="C:\Program Files (x86)\Jenkins\workspace\Hello">
-           <fileset file="C:\Program Files (x86)\Jenkins\workspace\Hello\hello.c" />
-        </cpptasks:cc>
-    </target>
-</project>
